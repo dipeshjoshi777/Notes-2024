@@ -1,2 +1,68 @@
-Logical operators in python  - arithmetic conditional and logical
+Logical operators in python  - arithmetic conditional logical and turnary
 https://hub.jovian.com/user/dipeshdjxxx/notebooks/932b86bd8a04431c88c038d222392069_1/first-steps-with-python.ipynb
+
+Python has several built-in data types for storing different kinds of information in variables. Following are some commonly used data types:
+Integer
+Float
+Boolean
+None
+String
+List
+Tuple
+Dictionary
+
+Integer, float, boolean, None, and string are primitive data types because they represent a single value. 
+Other data types like list, tuple, and dictionary are often called data structures or containers because they hold multiple pieces of data together.
+Integers represent positive or negative whole numbers, from negative infinity to infinity. 
+Note that integers should not include decimal points. Integers have the type int.
+
+Floats (or floating-point numbers) are numbers with a decimal point. 
+There are no limits on the value or the number of digits before or after the decimal point. Floating-point numbers have the type float. eg PI
+whole number is treated as a float if written with a decimal point, even though the decimal portion of the number is zero
+While performing arithmetic operations, integers are automatically converted to floats if any of the operands is a float. 
+Also, the division operator / always returns a float, even if both operands are integers. 
+Use the // operator if you want the result of the division to be an int
+
+Booleans represent one of 2 values: True and False. Booleans have the type bool
+automatically converted to ints when used in arithmetic operations. True is converted to 1 and False is converted to 0
+
+The None type includes a single value None, used to indicate the absence of a value. None has the type NoneType. 
+It is often used to declare a variable whose value may be assigned later.
+nothing = None  
+
+A string is used to represent text (a string of characters) in Python. Strings must be surrounded using quotations (either the single quote ' or the double quote "). 
+strings have the type string. You can check the length of a string using the len function. len(string) also print(string) and \n for spaces
+Strings also support several list operations, which are discussed in the next section. We'll look at a couple of examples here.
+You can access individual characters within a string using the [] indexing notation. 
+Note the character indices go from 0 to n-1, where n is the length of the string.
+today = "saturday night"
+today[5:11] 'day ni'
+You can also check whether a string contains a some text using the in operator.
+'day' in today Two or more strings can be joined or concatenated using the + operator. use "" to add spaces
+The string.replace method replaces a part of the string with another string. Note that replace returns a new string, and the original string is not modified.
+
+The .split method splits a string into a list of strings at every occurrence of provided character(s).
+he .strip method removes whitespace characters from the beginning and end of a string.
+
+A list in Python is an ordered collection of values. Lists can hold values of different data types and support operations to add, remove, and change values. 
+Lists have the type list. To create a list, enclose a sequence of values within square brackets [ and ], separated by commas.
+use len(list_name) to find length and just type list_name to print
+use list_name[1] to select the element in the list start of list being [0] and for end of list access use negative indices [-1]
+
+You can also change the value at a specific index within a list using the assignment operation.
+To remove an element from a specific index, use the pop method. fruits.insert(0, 'banana') to add elements
+
+
+
+A tuple is an ordered collection of values, similar to a list. Tuple is an immutable list and no values can be added
+Tuples are often used to create multiple variables with a single statement.Tuples have just two built-in methods: count and index
+
+
+A dictionary is an unordered collection of items. Each item stored in a dictionary has a key and value. 
+You can use a key to retrieve the corresponding value from the dictionary. Dictionaries have the type dict.
+Dictionaries are often used to store many pieces of information e.g. details about a person, in a single variable. 
+Dictionaries are created by enclosing key-value pairs within braces or curly brackets { and }.
+Dictionaries can also be created using the dict function.
+person2 = dict(name='Jane Judy', sex='Female', age=28, married=False)
+Keys can be used to access values using square brackets [ and ]. person2['name'] >> can also use the get method to access the value associated with a key.
+Dictionaries also provide methods to view the list of keys, values, or key-value pairs inside it.
