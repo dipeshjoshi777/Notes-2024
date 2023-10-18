@@ -52,11 +52,8 @@ use list_name[1] to select the element in the list start of list being [0] and f
 You can also change the value at a specific index within a list using the assignment operation.
 To remove an element from a specific index, use the pop method. fruits.insert(0, 'banana') to add elements
 
-
-
 A tuple is an ordered collection of values, similar to a list. Tuple is an immutable list and no values can be added
 Tuples are often used to create multiple variables with a single statement.Tuples have just two built-in methods: count and index
-
 
 A dictionary is an unordered collection of items. Each item stored in a dictionary has a key and value. 
 You can use a key to retrieve the corresponding value from the dictionary. Dictionaries have the type dict.
@@ -66,3 +63,41 @@ Dictionaries can also be created using the dict function.
 person2 = dict(name='Jane Judy', sex='Female', age=28, married=False)
 Keys can be used to access values using square brackets [ and ]. person2['name'] >> can also use the get method to access the value associated with a key.
 Dictionaries also provide methods to view the list of keys, values, or key-value pairs inside it.
+
+
+LOOPS
+if condition:
+    statement1
+    statement2
+The condition can be a value, variable or expression. If the condition evaluates to True, then the statements within the if block are executed. 
+Notice the four spaces before statement1, statement2, etc. The spaces inform Python that these statements are associated with the if statement above. 
+This technique of structuring code by adding spaces is called indentation.
+
+We may want to print a different message if the number is not even in the above example. This can be done by adding the else statement. 
+It is written as follows:
+
+if condition:
+    statement1
+    statement2
+else:
+    statement4
+    statement5
+If condition evaluates to True, the statements in the if block are executed. 
+If it evaluates to False, the statements in the else block are executed.
+Python also provides an elif statement (short for "else if") to chain a series of conditional blocks. The conditions are evaluated one by one. 
+For the first condition that evaluates to True, the block of statements below it is executed.
+The remaining conditions and statements are not evaluated. 
+
+You can also include an else statement at the end of a chain of if, elif... statements. 
+This code within the else block is evaluated when none of the conditions hold true.
+if > elif > elif > else  "" can also be combined using the logical operators and, or
+
+
+
+Another powerful feature of programming languages, closely related to branching, is running one or more statements multiple times. 
+This feature is often referred to as iteration on looping, 
+and there are two ways to do this in Python: using while loops and for loops.
+while loops have the following syntax:
+while condition:
+You can use the break statement within the loop's body 
+to immediately stop the execution and break out of the loop (even if the condition provided to while still holds true).
