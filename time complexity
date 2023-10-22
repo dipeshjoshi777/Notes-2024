@@ -14,3 +14,9 @@ When the input size is reduced by half, maybe when iterating, handling recursion
 When you have a single loop within your algorithm, it is linear time complexity (O(n)).
 When you have nested loops within your algorithm, meaning a loop in a loop, it is quadratic time complexity (O(n^2)).
 When the growth rate doubles with each addition to the input, it is exponential time complexity (O2^n).
+
+Classes often have methods, which are functions that are associated with a particular class, 
+and do things associated with the thing that the class is - but if all you want is to do something, a function is all you need.
+
+Essentially, a class is a way of grouping functions (as methods) and data (as properties) into a logical unit 
+revolving around a certain kind of thing. If you don't need that grouping, there's no need to make a class.
